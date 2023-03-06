@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cors());
 const authRoute = require("./routes/authRoute");
 const userRoute = require("./routes/userRoute");
-const poetRoute = require("./routes/poetRoute");
+const postRoute = require("./routes/postRoute");
 const categoryRoute = require("./routes/categoryRoute");
 
 connectDb();
