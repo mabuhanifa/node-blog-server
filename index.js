@@ -7,9 +7,9 @@ require("dotenv").config();
 const app = express();
 app.use(express.json());
 app.use(cors());
-const mongodb = process.env.MONGO_URL;
 
 connectDb();
+
 
 app.listen(port, () => {
   console.log(`App listening on ${port}`);
