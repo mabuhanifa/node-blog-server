@@ -15,6 +15,7 @@ const categoryRoute = require("./routes/categoryRoute");
 connectDb();
 
 app.use("/api/auth", authRoute);
+app.use("/api/user", userRoute);
 
 app.listen(port, () => {
   console.log(`App listening on ${port}`);
