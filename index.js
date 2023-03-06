@@ -7,9 +7,10 @@ require("dotenv").config();
 const app = express();
 app.use(express.json());
 app.use(cors());
-
+const authRoute = require("./routes/authRoute");
 connectDb();
 
+app.use("/api/auth", authRoute);
 
 app.listen(port, () => {
   console.log(`App listening on ${port}`);
